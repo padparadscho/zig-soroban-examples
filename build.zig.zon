@@ -1,0 +1,13 @@
+.{
+    .name = .zig_soroban_examples,
+    .version = "0.0.1",
+    .dependencies = .{
+        .@"soroban-sdk" = .{
+            .url = "git+https://github.com/leighmcculloch/zig-soroban-sdk?ref=main#cef37ded2739263f26922cbe46935b77c37e16f1",
+            .hash = "soroban_sdk-0.0.1-d-v_6BU5AwB-UIATw2qR2zrYCFpkPJmtlZRqdqVWmM76",
+        },
+    },
+    .fingerprint = 0x4323e03357d5d006,
+    .minimum_zig_version = "0.15.0",
+    .paths = .{ "examples", "build.zig", "build.zig.zon" },
+}
