@@ -25,6 +25,7 @@ This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-so
 | [errors](examples/errors)             | Demonstrates how to define and handle custom errors    |
 | [events](examples/events)             | Demonstrates how to emit structured events             |
 | [custom_types](examples/custom_types) | Demonstrates how to define and use custom data types   |
+| [auth](examples/auth)                 | Demonstrates authentication patterns                   |
 
 ## Build
 
