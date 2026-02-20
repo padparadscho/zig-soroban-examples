@@ -62,6 +62,10 @@ const CustomTypesContract = struct {
     }
 };
 
+comptime {
+    _ = sdk.contract.exportContract(CustomTypesContract);
+}
+
 // -- Helper functions --
 
 /// Reads the state map from storage or initialize it if not present
@@ -76,8 +80,4 @@ fn getStateMap() sdk.Map {
     initial_state.set(LAST_INCR_KEY, sdk.U32Val.fromU32(0));
 
     return initial_state;
-}
-
-comptime {
-    _ = sdk.contract.exportContract(CustomTypesContract);
 }
