@@ -1,5 +1,6 @@
 const std = @import("std");
 
+/// Contract examples
 const examples = [_]struct {
     name: []const u8,
     path: []const u8,
@@ -16,9 +17,11 @@ const examples = [_]struct {
 pub fn build(b: *std.Build) void {
     const optimize = b.standardOptimizeOption(.{});
 
+    // Add the Soroban Zig SDK module
     const sdk = b.dependency("soroban-sdk", .{ .optimize = optimize });
     const sdk_module = sdk.module("soroban-sdk");
 
+    // Build the postprocessor tool that optimizes WASM output
     const postprocess = b.addExecutable(.{
         .name = "postprocess_wasm",
         .root_module = b.createModule(.{
@@ -28,6 +31,7 @@ pub fn build(b: *std.Build) void {
         }),
     });
 
+    // Build a contract example
     inline for (examples) |ex| {
         const contract = b.addExecutable(.{
             .name = ex.name,
@@ -51,13 +55,16 @@ pub fn build(b: *std.Build) void {
         contract.entry = .disabled;
         contract.rdynamic = true;
 
+        // Run postprocessor to optimize WASM
         const run = b.addRunArtifact(postprocess);
         run.addArtifactArg(contract);
         const wasm = run.addOutputFileArg(ex.name ++ ".wasm");
 
+        // Install the generated WASM to zig-out/bin
         const install = b.addInstallBinFile(wasm, ex.name ++ ".wasm");
         install.step.dependOn(&run.step);
 
+        // Create a build step for a contract example
         const step = b.step(ex.name, "Build " ++ ex.name ++ " contract");
         step.dependOn(&install.step);
     }
