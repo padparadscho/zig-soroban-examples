@@ -15,6 +15,10 @@ const IncrementContract = struct {
     pub const increment_params = [_][]const u8{};
 
     /// Increments the counter by 1 and returns the new value
+    ///
+    /// # Arguments
+    ///
+    /// * None
     pub fn increment() sdk.U32Val {
         // Read the current count from instance storage, defaulting to 0
         const count: u32 = sdk.ledger.getU32(COUNTER_KEY, sdk.StorageType.instance) orelse 0;
