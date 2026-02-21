@@ -3,8 +3,8 @@
 //! This contract demonstrates authentication
 //!
 //! Build: `zig build auth`
-//! Deploy: `stellar contract deploy --wasm zig-out/bin/auth.wasm --source <account-private-key>`
-//! Invoke: `stellar contract invoke --id <contract-id> --source <account-private-key> --network testnet -- increment --user <account-public-key> --value 10`
+//! Deploy: `stellar contract deploy --wasm zig-out/bin/auth.wasm --alias auth --source deployer`
+//! Invoke: `stellar contract invoke --id auth --source user --network testnet -- increment --user <user-address> --value 10`
 
 const sdk = @import("soroban-sdk");
 

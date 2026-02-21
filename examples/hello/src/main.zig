@@ -3,8 +3,8 @@
 //! This contract demonstrates the basic structure of a Soroban contract
 //!
 //! Build: `zig build hello`
-//! Deploy: `stellar contract deploy --wasm zig-out/bin/hello.wasm --source <account-private-key>`
-//! Invoke: `stellar contract invoke --id <contract-id> --source <account-private-key> --network testnet -- hello --to world`
+//! Deploy: `stellar contract deploy --wasm zig-out/bin/hello.wasm --alias hello --source deployer`
+//! Invoke: `stellar contract invoke --id hello --source user --network testnet -- hello --to world`
 
 const sdk = @import("soroban-sdk");
 

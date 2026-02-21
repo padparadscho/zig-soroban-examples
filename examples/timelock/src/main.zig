@@ -3,12 +3,12 @@
 //! This contract demonstrates how to write a timelock and implements a greatly simplified claimable balance
 //!
 //! Build: `zig build timelock`
-//! Deploy: `stellar contract deploy --wasm zig-out/bin/timelock.wasm --source <account-private-key>`
+//! Deploy: `stellar contract deploy --wasm zig-out/bin/timelock.wasm --alias timelock --source deployer`
 //! Invoke:
-//!   - `stellar contract invoke --id <contract-id> --source <account-private-key> --network testnet -- /
-//!     deposit --from <account-public-key> --token <stellar-asset-contract-id> --amount <i128> /
-//!     --claimants '[{"address": "<address-1>"},{"address": "<address-2>"}]' --time_bound_kind <u32> --time_bound_timestamp <u64>`
-//!   - `stellar contract invoke --id <contract-id> --source <account-private-key> --network testnet -- claim --claimant <account-public-key>`
+//!   - 'deposit': `stellar contract invoke --id timelock --source sender --network testnet /
+//!                 -- deposit --from sender --token <stellar-asset-contract-id> --amount <i128> /
+//!                 --claimants '[{"address": "<user-address>"}]' --time_bound_kind <u32> --time_bound_timestamp <u64>`
+//!   - 'claim': `stellar contract invoke --id timelock --source user --network testnet -- claim --claimant user`
 
 const sdk = @import("soroban-sdk");
 

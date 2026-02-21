@@ -11,6 +11,15 @@ A collection of **Soroban smart contract** examples written in **Zig**. The exam
 - [Zig](https://ziglang.org/download/) 0.15.x
 - [Stellar CLI](https://developers.stellar.org/docs/build/smart-contracts/getting-started/setup) 25.x
 
+### Identities Setup
+
+To deploy and interact with the contracts, set up Stellar accounts as needed using the Stellar CLI:
+
+```bash
+# Create Stellar accounts for deployer, user, sender, admin, etc.
+stellar keys address deployer
+```
+
 ## Zig Soroban SDK
 
 This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-soroban-sdk) by **Leigh McCulloch**.
@@ -45,7 +54,7 @@ Deploy to Stellar Testnet:
 
 ```bash
 # Example: Deploy the 'hello' contract
-stellar contract deploy --wasm zig-out/bin/hello.wasm --source <account-private-key> --network testnet
+stellar contract deploy --wasm zig-out/bin/hello.wasm --alias hello --source deployer --network testnet
 ```
 
 ## Invoke
@@ -54,7 +63,7 @@ Invoke the contract:
 
 ```bash
 # Example: Invoke the 'hello' contract
-stellar contract invoke --id <contract-id> --source <account-private-key> --network testnet -- hello --to world
+stellar contract invoke --id hello --source user --network testnet -- hello --to world
 ```
 
 ## Project Structure

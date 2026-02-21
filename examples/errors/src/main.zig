@@ -3,8 +3,8 @@
 //! This contract demonstrates how to define and handle custom errors
 //!
 //! Build: `zig build errors`
-//! Deploy: `stellar contract deploy --wasm zig-out/bin/errors.wasm --source <account-private-key>`
-//! Invoke: `stellar contract invoke --id <contract-id> --source <account-private-key> --network testnet -- increment`
+//! Deploy: `stellar contract deploy --wasm zig-out/bin/errors.wasm --alias errors --source deployer`
+//! Invoke: `stellar contract invoke --id errors --source user --network testnet -- increment`
 
 const sdk = @import("soroban-sdk");
 

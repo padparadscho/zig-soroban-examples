@@ -3,8 +3,8 @@
 //! This contract demonstrates a simple counter that can be incremented
 //!
 //! Build: `zig build increment`
-//! Deploy: `stellar contract deploy --wasm zig-out/bin/increment.wasm --source <account-private-key>`
-//! Invoke: `stellar contract invoke --id <contract-id> --source <account-private-key> --network testnet -- increment`
+//! Deploy: `stellar contract deploy --wasm zig-out/bin/increment.wasm --alias increment --source deployer`
+//! Invoke: `stellar contract invoke --id increment --source user --network testnet -- increment`
 
 const sdk = @import("soroban-sdk");
 

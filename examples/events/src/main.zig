@@ -3,8 +3,8 @@
 //! This contract demonstrates structured event emission
 //!
 //! Build: `zig build events`
-//! Deploy: `stellar contract deploy --wasm zig-out/bin/events.wasm --source <account-private-key>`
-//! Invoke: `stellar contract invoke --id <contract-id> --source <account-private-key> --network testnet -- increment`
+//! Deploy: `stellar contract deploy --wasm zig-out/bin/events.wasm --alias events --source deployer`
+//! Invoke: `stellar contract invoke --id events --source user --network testnet -- increment`
 
 const sdk = @import("soroban-sdk");
 

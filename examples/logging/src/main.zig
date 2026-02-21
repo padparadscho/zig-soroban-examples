@@ -3,8 +3,8 @@
 //! This contract demonstrates how to use the standard Soroban terminal logging to emit debug logs
 //!
 //! Build: `zig build logging`
-//! Deploy: `stellar contract deploy --wasm zig-out/bin/logging.wasm --source <account-private-key>`
-//! Invoke: `stellar contract invoke --id <contract-id> --source <account-private-key> --network testnet -- hello --value world`
+//! Deploy: `stellar contract deploy --wasm zig-out/bin/logging.wasm --alias logging --source deployer`
+//! Invoke: `stellar contract invoke --id logging --source user --network testnet -- hello --value world`
 
 const sdk = @import("soroban-sdk");
 

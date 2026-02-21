@@ -3,8 +3,8 @@
 //! This contract demonstrates how to define and use custom data structures
 //!
 //! Build: `zig build custom_types`
-//! Deploy: `stellar contract deploy --wasm zig-out/bin/custom_types.wasm --source <account-private-key>`
-//! Invoke: `stellar contract invoke --id <contract-id> --source <account-private-key> --network testnet -- increment --incr 10`
+//! Deploy: `stellar contract deploy --wasm zig-out/bin/custom_types.wasm --alias custom_types --source deployer`
+//! Invoke: `stellar contract invoke --id custom_types --source user --network testnet -- increment --incr 10`
 
 const sdk = @import("soroban-sdk");
 
