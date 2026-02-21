@@ -17,15 +17,16 @@ This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-so
 
 ## Examples
 
-| Example                               | Description                                            |
-| ------------------------------------- | ------------------------------------------------------ |
-| [hello](examples/hello)               | Demonstrates the basic structure of a Soroban contract |
-| [increment](examples/increment)       | Demonstrates a simple counter that can be incremented  |
-| [logging](examples/logging)           | Demonstrates terminal logging to emit debug logs       |
-| [errors](examples/errors)             | Demonstrates how to define and handle custom errors    |
-| [events](examples/events)             | Demonstrates how to emit structured events             |
-| [custom_types](examples/custom_types) | Demonstrates how to define and use custom data types   |
-| [auth](examples/auth)                 | Demonstrates authentication patterns                   |
+| Example                               | Description                                                     |
+| ------------------------------------- | --------------------------------------------------------------- |
+| [hello](examples/hello)               | Demonstrates the basic structure of a Soroban contract          |
+| [increment](examples/increment)       | Demonstrates a simple counter that can be incremented           |
+| [logging](examples/logging)           | Demonstrates terminal logging to emit debug logs                |
+| [errors](examples/errors)             | Demonstrates how to define and handle custom errors             |
+| [events](examples/events)             | Demonstrates how to emit structured events                      |
+| [custom_types](examples/custom_types) | Demonstrates how to define and use custom data types            |
+| [auth](examples/auth)                 | Demonstrates authentication patterns                            |
+| [timelock](examples/timelock)         | Demonstrates a simple timelock contract with claimable balances |
 
 ## Build
 
