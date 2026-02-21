@@ -36,6 +36,7 @@ This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-so
 | [custom_types](examples/custom_types) | Demonstrates how to define and use custom data types            |
 | [auth](examples/auth)                 | Demonstrates authentication patterns                            |
 | [timelock](examples/timelock)         | Demonstrates a simple timelock contract with claimable balances |
+| [atomic_swap](examples/atomic_swap)   | Demonstrates atomic token swaps between two parties             |
 
 ## Build
 
