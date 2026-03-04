@@ -26,10 +26,11 @@ This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-so
 
 ## Examples
 
-| Example                         | Description                                            |
-| ------------------------------- | ------------------------------------------------------ |
-| [hello](examples/hello)         | Demonstrates the basic structure of a Soroban contract |
-| [increment](examples/increment) | Demonstrates a simple counter that can be incremented  |
+| Example                         | Description                                                   |
+| ------------------------------- | ------------------------------------------------------------- |
+| [hello](examples/hello)         | Demonstrates the basic structure of a Soroban contract        |
+| [increment](examples/increment) | Demonstrates a simple counter that can be incremented         |
+| [logging](examples/logging)     | Demonstrates how to use the standard Soroban terminal logging |
 
 ## Build
 
