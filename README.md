@@ -32,6 +32,7 @@ This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-so
 | [increment](examples/increment) | Demonstrates a simple counter that can be incremented         |
 | [logging](examples/logging)     | Demonstrates how to use the standard Soroban terminal logging |
 | [errors](examples/errors)       | Demonstrates how to define and handle custom errors           |
+| [events](examples/events)       | Demonstrates how to define and emit custom events             |
 
 ## Build
 
