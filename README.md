@@ -35,6 +35,7 @@ This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-so
 | [events](examples/events)             | Demonstrates how to define and emit custom events             |
 | [custom_types](examples/custom_types) | Demonstrates how to define and use custom data structures     |
 | [auth](examples/auth)                 | Demonstrates how to implement basic authentication logic      |
+| [timelock](examples/timelock)         | Demonstrates how to implement time-based conditions           |
 
 ## Build
 

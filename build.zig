@@ -12,6 +12,7 @@ const examples = [_]struct {
     .{ .name = "events", .path = "examples/events/contract.zig" },
     .{ .name = "custom_types", .path = "examples/custom_types/contract.zig" },
     .{ .name = "auth", .path = "examples/auth/contract.zig" },
+    .{ .name = "timelock", .path = "examples/timelock/contract.zig" },
 };
 
 pub fn build(b: *std.Build) void {
