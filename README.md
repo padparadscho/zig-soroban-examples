@@ -26,16 +26,17 @@ This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-so
 
 ## Examples
 
-| Example                               | Description                                                   |
-| ------------------------------------- | ------------------------------------------------------------- |
-| [hello](examples/hello)               | Demonstrates the basic structure of a Soroban contract        |
-| [increment](examples/increment)       | Demonstrates a simple counter that can be incremented         |
-| [logging](examples/logging)           | Demonstrates how to use the standard Soroban terminal logging |
-| [errors](examples/errors)             | Demonstrates how to define and handle custom errors           |
-| [events](examples/events)             | Demonstrates how to define and emit custom events             |
-| [custom_types](examples/custom_types) | Demonstrates how to define and use custom data structures     |
-| [auth](examples/auth)                 | Demonstrates how to implement basic authentication logic      |
-| [timelock](examples/timelock)         | Demonstrates how to implement time-based conditions           |
+| Example                                   | Description                                                      |
+| ----------------------------------------- | ---------------------------------------------------------------- |
+| [hello](examples/hello)                   | Demonstrates the basic structure of a Soroban contract           |
+| [increment](examples/increment)           | Demonstrates a simple counter that can be incremented            |
+| [logging](examples/logging)               | Demonstrates how to use the standard Soroban terminal logging    |
+| [errors](examples/errors)                 | Demonstrates how to define and handle custom errors              |
+| [events](examples/events)                 | Demonstrates how to define and emit custom events                |
+| [custom_types](examples/custom_types)     | Demonstrates how to define and use custom data structures        |
+| [auth](examples/auth)                     | Demonstrates how to implement basic authentication logic         |
+| [timelock](examples/timelock)             | Demonstrates how to implement time-based conditions              |
+| [cross_contract](examples/cross_contract) | Demonstrates how to call another contract from within a contract |
 
 ## Build
 
