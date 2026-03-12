@@ -38,6 +38,7 @@ This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-so
 | [timelock](examples/timelock)             | Demonstrates how to implement time-based conditions              |
 | [cross_contract](examples/cross_contract) | Demonstrates how to call another contract from within a contract |
 | [atomic_swap](examples/atomic_swap)       | Demonstrates a simple atomic swap between two parties            |
+| [deployer](examples/deployer)             | Demonstrates a contract that deploys another contract            |
 
 ## Build
 
