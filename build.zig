@@ -18,6 +18,8 @@ const examples = [_]struct {
     .{ .name = "atomic_swap", .path = "examples/atomic_swap/contract.zig" },
     .{ .name = "simple_contract", .path = "examples/deployer/contract/contract.zig" },
     .{ .name = "factory", .path = "examples/deployer/deployer/contract.zig" },
+    .{ .name = "old_contract", .path = "examples/upgradeable_contract/old_contract/contract.zig" },
+    .{ .name = "new_contract", .path = "examples/upgradeable_contract/new_contract/contract.zig" },
 };
 
 pub fn build(b: *std.Build) void {
