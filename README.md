@@ -40,6 +40,7 @@ This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-so
 | [atomic_swap](examples/atomic_swap)                   | Demonstrates a simple atomic swap between two parties            |
 | [deployer](examples/deployer)                         | Demonstrates a contract that deploys another contract            |
 | [upgradeable_contract](examples/upgradeable_contract) | Demonstrates a simple upgradeable contract pattern               |
+| [ttl](examples/ttl)                                   | Demonstrates how to manage TTL (Time-To-Live) for contract data  |
 
 ## Build
 
