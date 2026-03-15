@@ -21,6 +21,7 @@ const examples = [_]struct {
     .{ .name = "old_contract", .path = "examples/upgradeable_contract/old_contract/contract.zig" },
     .{ .name = "new_contract", .path = "examples/upgradeable_contract/new_contract/contract.zig" },
     .{ .name = "ttl", .path = "examples/ttl/contract.zig" },
+    .{ .name = "alloc", .path = "examples/alloc/contract.zig" },
 };
 
 pub fn build(b: *std.Build) void {

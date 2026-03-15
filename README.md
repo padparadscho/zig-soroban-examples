@@ -41,6 +41,7 @@ This project uses the [zig-soroban-sdk](https://github.com/leighmcculloch/zig-so
 | [deployer](examples/deployer)                         | Demonstrates a contract that deploys another contract            |
 | [upgradeable_contract](examples/upgradeable_contract) | Demonstrates a simple upgradeable contract pattern               |
 | [ttl](examples/ttl)                                   | Demonstrates how to manage TTL (Time-To-Live) for contract data  |
+| [alloc](examples/alloc)                               | Demonstrates how to use dynamic allocation of Soroban Vec type   |
 
 ## Build
 
