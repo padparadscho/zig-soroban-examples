@@ -22,6 +22,7 @@ const examples = [_]struct {
     .{ .name = "new_contract", .path = "examples/upgradeable_contract/new_contract/contract.zig" },
     .{ .name = "ttl", .path = "examples/ttl/contract.zig" },
     .{ .name = "alloc", .path = "examples/alloc/contract.zig" },
+    .{ .name = "token", .path = "examples/token/contract.zig" },
 };
 
 pub fn build(b: *std.Build) void {
